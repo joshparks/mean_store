@@ -10,7 +10,7 @@
 			
 			replace : true,
 			
-			templateUrl : '/components/footer/footer.html',
+			templateUrl : '/components/footer/footer.templ.html',
 			
 			link : function link(scope, elem, attr) {
 				console.log('linking directive (storeHeader)...');

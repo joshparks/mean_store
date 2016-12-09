@@ -10,7 +10,7 @@
 			
 			replace : true,
 			
-			templateUrl : '/components/header/header.html',
+			templateUrl : '/components/header/header.templ.html',
 			
 			controller : 'StoreHeaderController',
 			
