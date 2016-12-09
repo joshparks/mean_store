@@ -31,6 +31,18 @@
 				controller : 'LoginController',
 				activetab: 'login'
 			})
+
+			.when('/shop', {
+				templateUrl : 'shop/shop.view.html',
+				controller : 'ShopController',
+				activetab: 'shop'
+			})
+			
+			.when('/cart', {
+				templateUrl : 'cart/cart.view.html',
+				controller : 'CartController',
+				activetab: 'cart'
+			})
 		
 			.otherwise({
 				redirectTo : '/'
