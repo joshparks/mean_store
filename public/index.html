@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html ng-app="meanStore">
+
+<head>
+	
+	<!-- meta info -->
+	<meta charset="utf-8">
+	
+	<!-- optimize viewport for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>MEAN Store</title>
+		
+	<!-- styles -->
+	<link rel="stylesheet" href="/resources/css/reset.css" />
+	<link rel="stylesheet" href="/resources/css/site.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	
+	<!-- scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js"></script>
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular-route.min.js"></script>
+	
+	<script src="/config/app.js"></script>
+	<script src="/config/location.js"></script>
+	<script src="/config/router.js"></script>
+	
+	<script src="/components/header/header-directive.js"></script>
+	<script src="/components/header/header-controller.js"></script>
+	
+	<script src="/components/footer/footer-directive.js"></script>
+		
+	<script src="/about/about-controller.js"></script>
+	
+	<script src="/home/home-controller.js"></script>
+	<script src="/home/home-service.js"></script>
+	
+</head>
+
+<body class="container">
+	
+	<store-header></store-header>
+	
+	<div ng-view style="border:1px solid #ddd">
+		<!-- auto-populated by angular -->
+	</div>
+	
+	<store-footer></store-footer>
+	
+</body>
+
+</html>
