@@ -19,6 +19,12 @@
 				controller : 'AboutController',
 				activetab: 'about'
 			})
+			
+			.when('/register', {
+				templateUrl : 'register/register.html',
+				controller : 'RegisterController',
+				activetab: 'register'
+			})
 		
 			.otherwise({
 				redirectTo : '/'
